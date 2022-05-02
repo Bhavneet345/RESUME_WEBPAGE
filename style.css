@@ -374,6 +374,28 @@ section:nth-child(2n + 1){
     left: -10%;
 }
 
+@media screen and (max-width:600px) {
+    .education-container{
+        left: 5%;
+    }
+
+    .education-divider{
+        left: 2%;
+    }
+    .education-box{
+        width: 70%;
+    }
+    .education-box:nth-child(2n){
+        left: 5%;
+    }
+    .education-box:nth-child(2n)::after{
+        left: -8% !important;
+    }
+    .education-box:nth-child(2n + 1)::after{
+        left: -8% !important;
+    }
+}
+
 /* Portfolio */
 .portfolio-heading span{ 
     font-size: 40px;
